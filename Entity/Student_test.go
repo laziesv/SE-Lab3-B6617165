@@ -40,7 +40,7 @@ func TestStudentValidation(t *testing.T) {
 			FirstName: "John",
 			LastName:  "Doe",
 			Email:     "john.doe@example.com",
-			Age:       151,
+			Age:       1000,
 		}
 		ok, err := govalidator.ValidateStruct(s)
 		Expect(ok).To(BeFalse())
